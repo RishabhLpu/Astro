@@ -1,0 +1,254 @@
+/* General Styles */
+body {
+   font-family: Arial, sans-serif; /* Use a simple font */
+   margin: 0;
+   padding: 0;
+}
+
+/* Navigation Bar Styles */
+#nav-wrap {
+   display: flex;
+   align-items: center;
+   justify-content: space-between; /* Align items properly */
+   padding: 20px;
+   background-color: #161415; /* Background color for the navbar */
+}
+
+.logo img {
+   height: 50px; /* Adjust based on your design */
+   width: auto; /* Maintain aspect ratio */
+   display: inline-block;
+   vertical-align: middle; /* Align with text */
+   transition: transform 0.3s ease; /* Smooth hover effect */
+}
+
+#nav {
+   list-style: none;
+   display: flex;
+}
+
+#nav li {
+   margin: 0 15px; /* Space between nav items */
+}
+
+#nav a {
+   color: white; /* Link color */
+   text-decoration: none; /* Remove underline */
+   font-weight: bold; /* Bold links */
+}
+
+#nav a:hover {
+   color: #51c5cf; /* Change color on hover */
+}
+
+/* Banner Styles */
+   .banner-content {
+   position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+   text-align: center;
+    color: #fff; /* Text color for contrast */
+    background: rgba(0, 0, 0, 0.5); /* Optional: Add semi-transparent background */
+    padding: 20px;
+    border-radius: 10px;
+   }
+   
+   .responsive-headline {
+    font-size: 36px; /* Adjust headline size */
+    margin: 10px 0;
+   }
+   
+   .banner-info {
+    margin-top: 15px;
+    font-size: 16px; /* Adjust info text size */
+   }
+      
+   
+   
+/* Info Section Styles */
+.info-section {
+   padding: 40px 20px; /* Add padding for the new section */
+   background-color: #f9f9f9; /* Background color for the info section */
+   color: #333; /* Text color for the info section */
+   text-align: center; /* Center align text */
+}
+
+/* Result Styles */
+#result {
+   text-align: center;
+   margin-top: 20px;
+}
+
+.flower {
+   width: 100px; /* Adjust size as needed */
+   margin: 20px auto;
+}
+
+.happiness-message {
+   font-size: 1.2em;
+   color: #27ae60; /* A happy green color */
+   font-weight: bold;
+}
+
+/* Button and Form Styles */
+button {
+   padding: 10px 20px;
+   background-color: #27ae60; /* Button color */
+   color: white; /* Button text color */
+   border: none; /* Remove border */
+   cursor: pointer; /* Pointer cursor on hover */
+   transition: background-color 0.3s; /* Smooth transition */
+}
+
+button:hover {
+   background-color: #219150; /* Darker shade on hover */
+}
+
+/* Footer Styles */
+footer {
+   background-color: #2C3E50;
+   color: #FFFFFF;
+   padding: 20px 0;
+   text-align: center; /* Center align footer text */
+   bottom: 0%;
+}
+
+footer a {
+   color: #FFFFFF; /* Footer link color */
+   text-decoration: underline; /* Underline links */
+}
+
+footer .social-links {
+   list-style: none; /* Remove bullet points */
+   padding: 0; /* Remove padding */
+   display: inline-block; /* Inline block for horizontal layout */
+}
+
+footer .social-links li {
+   display: inline; /* Inline list items */
+   margin: 0 10px; /* Space between icons */
+}
+
+/* Additional Styles for Media Queries */
+@media only screen and (max-width: 768px) {
+   .banner {
+       padding: 10px; /* Adjust padding for smaller screens */
+   }
+
+   .info-section {
+       padding: 20px 10px; /* Adjust padding for smaller screens */
+   }
+
+   button {
+       width: 100%; /* Make buttons full width on smaller screens */
+   }
+
+   #nav {
+       flex-direction: column; /* Stack navigation items vertically on small screens */
+       align-items: center; /* Center align items */
+   }
+
+   #nav li {
+       margin: 10px 0; /* Space between nav items */
+   }
+}
+/* General Responsive Styles */
+@media only screen and (max-width: 768px) {
+       /* Navbar Styles for Small Screens */
+       #nav-wrap {
+           flex-direction: column; /* Stack items vertically */
+           align-items: flex-start; /* Align items to the start */
+           padding: 15px; /* Adjust padding */
+       }
+   
+       .logo img {
+           height: 40px; /* Reduce logo size for smaller screens */
+       }
+   
+       #nav {
+           flex-direction: column; /* Stack navigation items vertically */
+           width: 100%; /* Full width for menu */
+           align-items: flex-start; /* Align links to the left */
+       }
+   
+       #nav li {
+           margin: 10px 0; /* Add spacing between menu items */
+       }
+   
+       #nav a {
+           font-size: 14px; /* Adjust font size for smaller screens */
+           padding: 10px; /* Add padding for touch-friendly navigation */
+       }
+   
+       /* Banner Styles for Small Screens */
+       .banner-content {
+           padding: 15px; /* Reduce padding */
+           border-radius: 5px; /* Smaller border radius */
+       }
+   
+       .responsive-headline {
+           font-size: 28px; /* Smaller headline font */
+       }
+   
+       .banner-info {
+           font-size: 14px; /* Adjust text size */
+       }
+   
+       /* Info Section Styles */
+       .info-section {
+           padding: 20px 10px; /* Reduce padding */
+       }
+   
+       /* Buttons */
+       button {
+           width: 100%; /* Full width buttons */
+           font-size: 14px; /* Adjust font size */
+       }
+   
+       /* Footer */
+       footer {
+           padding: 10px 0; /* Reduce padding */
+       }
+   
+       footer .social-links {
+           display: flex; /* Align links horizontally */
+           justify-content: center; /* Center links */
+       }
+   
+       footer .social-links li {
+           margin: 0 5px; /* Reduce spacing between icons */
+       }
+   }
+   
+   /* For Extra Small Screens (up to 480px) */
+   @media only screen and (max-width: 480px) {
+       /* Navbar Styles */
+       #nav-wrap {
+           padding: 10px; /* Reduce padding */
+       }
+   
+       .logo img {
+           height: 30px; /* Further reduce logo size */
+       }
+   
+       #nav a {
+           font-size: 12px; /* Smaller font for links */
+           padding: 8px; /* Adjust padding */
+       }
+   
+       /* Banner Content */
+       .responsive-headline {
+           font-size: 24px; /* Smaller headline */
+       }
+   
+       .banner-info {
+           font-size: 12px; /* Adjust info text size */
+       }
+   
+       /* Info Section */
+       .info-section {
+           padding: 15px 5px; /* Further reduce padding */
+       }
+   }
+   
